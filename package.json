@@ -1,0 +1,22 @@
+{
+  "name": "mod-registry",
+  "version": "0.0.1",
+  "description": "A tool that allows you to easily allow mods and contributions",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schematical/mod-registry-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schematical/mod-registry-js/issues"
+  },
+  "homepage": "https://github.com/schematical/mod-registry-js#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
