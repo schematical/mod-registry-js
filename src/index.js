@@ -51,7 +51,7 @@ class RegistryCollection{
         }
 
         let index = Math.floor(this.registryManager.rnd() * this.rndMax);
-        console.log("Idex:", index);
+
         let lastX = null;
         let winnerX = null;
         this.rndKeys.forEach((x)=>{
@@ -94,7 +94,7 @@ class RegistryManager{
     }
 
     range(data, field, _default){
-        console.log("Bananas: ", data);
+
         if(_.isUndefined(data[field])){
             return _default;
         }
