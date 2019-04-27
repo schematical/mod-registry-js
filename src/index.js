@@ -16,6 +16,8 @@ class RegistryCollection{
         if(!_.isObject(data)){
             throw new Error("Invalid `data` passed in. Must be an object")
         }
+        let namespaceParts = namespace.split(":");
+        data.shortNamespace = namespaceParts[namespaceParts.length - 1];
         this.coll[namespace] = data;
         this.rndKeys = null;
     }
@@ -98,7 +100,7 @@ class RegistryManager{
         if(_.isUndefined(data[field])){
             return _default;
         }
-        let range = data[field].min - data[field].max ;
+        let range = data[field].max - data[field].min;
         return Math.round(this.rnd() * range) + data[field].min;
     }
     rndColl(data, field, _default){
